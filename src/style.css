@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	z-index: 200;
+}
+body {
+	font-family: 'Red Hat Text';
+	font-weight: 700;
+	font-size: 14px;
+	color: #fff;
+	background: linear-gradient(0deg, var(--background) 3%, var(--neutral-blackblue) 40%);
+}
+
+a {
+	color: inherit;	
+}
+body::before {
+	height: 100vh;
+	width: 100vw;
+	background-image: url("../images/bg-stars.svg");
+	content: '';
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+body::after {
+	height: 100vh;
+	width: 100vw;
+	content: '';
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+	background: url("../images/pattern-hills.svg") no-repeat bottom;
+}
+
+:root {
+	--background: #30243a;
+	--primary-blue: hsl(237, 18%, 59%);
+	--primary-red: hsl(345, 95%, 68%);
+
+	--white: hsl(0, 0%, 100%);
+	--neutral-blue: hsl(236, 21%, 26%);
+	--neutral-darkblue: hsl(235, 16%, 14%);
+	--neutral-blackblue: hsl(234, 17%, 12%);
+}
+
+.linha {
+	display: inline-flex;
+	width: 100%;
+	justify-content: space-evenly;
+	max-width: 580px;
+}
+
+.titulo {
+	margin-top: auto;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--white);
+	letter-spacing: 2px;
+	margin-bottom: 4em;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0 1rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+.card .label {
+	color: var(--primary-blue);
+	margin-top: 1rem;
+	font-size: .65em;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.card .contador {
+	color: var(--primary-red);
+	min-width: 1.5em;
+	min-height: 1.5em;
+	text-align: center;
+}
+
+.card .around {
+	background-color: var(--neutral-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: .7rem;
+	border-radius: .5rem;
+	font-size: 2.5em;
+	box-shadow: 0 0.5rem var(--neutral-darkblue);
+}
+.rodape {
+	margin-top: auto;
+}
+
+.social {
+	width: fit-content;
+	margin: 0 auto;
+	font-size: 2em;
+	color: var(--primary-blue);
+}
+
+.social .fab {
+	margin : 1.5rem 1rem;
+	transition: ease color .3s;
+}
+
+.social .fab:hover {
+	color: var(--primary-red);
+}
+
+.attribution {
+	color: var(--primary-blue);
+	margin: 1rem .5rem;
+	text-align: center;
+}
+
+.attribution a {
+	color: var(--primary-red);
+}
+
+@media screen and (min-width: 520px) {
+
+	.card .around {
+		font-size : 4em;
+	}
+
+}
