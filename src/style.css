@@ -53,7 +53,7 @@ body::after {
 	display: inline-flex;
 	width: 100%;
 	justify-content: space-evenly;
-	max-width: 580px;
+	max-width: 680px;
 }
 
 .titulo {
@@ -90,22 +90,47 @@ body::after {
 }
 
 .card .contador {
-	color: var(--primary-red);
-	min-width: 1.5em;
-	min-height: 1.5em;
+	background-image: linear-gradient(0deg, var(--primary-red) 49.5%, #c93c5e 50%, #d44e71 50.5%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	text-align: center;
 }
 
 .card .around {
-	background-color: var(--neutral-blue);
+	background-image: linear-gradient(0deg, var(--neutral-blue) 49.5%, #292941 50%, #2c2c44 50.5%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 	padding: .7rem;
+	min-height: 2em;
+	min-width: 2em;
 	border-radius: .5rem;
 	font-size: 2.5em;
 	box-shadow: 0 0.5rem var(--neutral-darkblue);
+
+	overflow: hidden;
 }
+
+.card .around::after,
+.card .around::before {
+	height: 10px;
+	width: 10px;
+	content: '';
+	display: block;
+	position: absolute;
+	background-color: var(--neutral-blackblue);
+	border-radius: 50%;
+}
+
+.card .around::after {
+	left: -5px;
+}
+
+.card .around::before {
+	right: -5px;
+}
+
 .rodape {
 	margin-top: auto;
 }
@@ -137,9 +162,15 @@ body::after {
 }
 
 @media screen and (min-width: 520px) {
+	.card .around {
+		font-size: 3.5em;
+	}
+}
+
+@media screen and (min-width: 720px) {
 
 	.card .around {
-		font-size : 4em;
+		font-size : 5em;
 	}
 
 }
