@@ -17,6 +17,7 @@ body {
 a {
 	color: inherit;	
 }
+
 body::before {
 	height: 100vh;
 	width: 100vw;
@@ -110,7 +111,7 @@ body::after {
 }
 
 .social {
-	width: fit-content;
+	width: max-content;
 	margin: 0 auto;
 	font-size: 2em;
 	color: var(--primary-blue);

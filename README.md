@@ -13,6 +13,9 @@ Users should be able to:
 - See a live countdown timer that ticks down every second (start the count at 14 days)
 - **Bonus**: When a number changes, make the card flip from the middle
 
+### link
+[live netlify](https://sl-countdown.netlify.app/)
+
 ### Screenshot
 
 ![](./screenshot.png)
