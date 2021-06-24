@@ -5,6 +5,8 @@ he table of contents based on what sections you keep.
 
 ## Overview
 
+![](./screenshot.png)
+
 ### The challenge
 
 Users should be able to:
@@ -15,10 +17,6 @@ Users should be able to:
 
 ### link
 [live netlify](https://sl-countdown.netlify.app/)
-
-### Screenshot
-
-![](./screenshot.png)
 
 ## My process
 
